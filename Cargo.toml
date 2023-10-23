@@ -1,0 +1,12 @@
+[package]
+name = "wasmer-bug-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.75"
+js-sys = "0.3.64"
+testresult = "0.3.0"
+wasm-bindgen-test = "0.3.37"
+wasmer = { version = "4.2.0", default-features = false, features = ["js", "wat", "std"] }
+web-sys = { version = "0.3.64", features = ["console"] }
